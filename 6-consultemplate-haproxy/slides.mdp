@@ -1,0 +1,52 @@
+%title: CONSUL - Consul Template
+%author: xavki
+
+
+-> HAPROXY <-
+
+<br>
+
+* Load Balancer : frontend/backend
+
+
+* 1 fichier de conf : /etc/haproxy/haproxy.cfg
+
+
+* édition du fichier à la main et reload si modification de la conf
+
+
+* pool de service par IP
+
+
+
+
+---------------------------------------------------------------------------
+
+
+-> CONSUL-TEMPLATE <-
+
+
+
+
+<br>
+* binaire en go (éditer par hashicorp = consul)
+
+
+* éditeur de fichier de conf via un template (nginx, haproxy, apache...)
+
+
+* permet de modifier les fichiers de conf et de lancer une commande (reload de service)
+
+
+* interface avec consul
+
+
+```
+https://github.com/hashicorp/consul-template
+```
+
+exemple haproxy :
+
+```
+https://github.com/hashicorp/consul-template/blob/master/examples/haproxy.md
+```
